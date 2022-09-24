@@ -51,8 +51,7 @@ class MainWindow:
     
     def newtab(self):
         self.ui.tabWidget.addTab(QWidget(), "Atomizer - New tab")
-    def removetab(self):
-        self.ui.tabWidget.removeTab(0)
+
     
     def about(self):
         self.aboutdlg = QMessageBox()

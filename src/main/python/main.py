@@ -21,7 +21,6 @@ class MainWindow:
         self.ui.actionLoad_File.triggered.connect(self.load_file)
         self.ui.actionSave_file.triggered.connect(self.save_file)
         self.ui.actionNew_Tab.triggered.connect(self.newtab)
-        self.ui.actionClose_Tab.triggered.connect(self.removetab)
         self.ui.actionAbout.triggered.connect(self.about)
 
         self.ui.actionClose_Tab.triggered.connect(self.close)

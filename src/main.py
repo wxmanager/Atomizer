@@ -1,6 +1,6 @@
 import sys
-from PyQt5.QtWidgets import QApplication, QMainWindow, QFileDialog, QMessageBox, QWidget
-from PyQt5 import QtCore, QtGui
+from PyQt6.QtWidgets import QApplication, QMainWindow, QFileDialog, QMessageBox, QWidget
+from PyQt6 import QtCore, QtGui
 from uis.Ui_MainWindow import Ui_MainWindow
 import os
 
@@ -12,7 +12,7 @@ class MainWindow:
         self.ui = Ui_MainWindow()
         self.ui.setupUi(self.main_win)
         font = QtGui.QFont('monospace')
-        font.setPointSize(15)
+        font.setPointSize(10)
 
         self.ui.plainTextEdit.setFont(font)
 
@@ -58,11 +58,11 @@ class MainWindow:
         self.aboutdlg.setWindowTitle("About Atomizer")
         self.aboutdlg.setText(
             "Atomizer is atext editor made for the Wxmanager Desktop environment \n\nAtomizer Version: ")
-        self.aboutdlg.exec_()
+        self.aboutdlg.exec()
 
 
 if __name__ == "__main__":
     app = QApplication(sys.argv)
     main_win = MainWindow()
     main_win.show()
-    sys.exit(app.exec_())
+    sys.exit(app.exec())
